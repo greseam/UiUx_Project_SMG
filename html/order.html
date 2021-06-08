@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--color pallete 
+            orange: #FE7A49
+            white-cream?: #F5F4DB
+            light-cream: #D2C1B0
+            dark-cream: #8F755F
+            brown: #37251B
+
+        -->
+        <title>Bridgehouse Coffee & Cafe - Home</title>
+        <link rel="shortcut icon" href="../img/bridgehouse_icon.png">
+        <meta charset="UTF-8">
+        <meta name="description" content="New Web layout for Bridgehouse Coffee and Cafe">
+        <meta name="keywords" content="Coffee, Coffe shop, lunch, breakfast, cafe">
+        <meta name="author" content="Sean Gregor">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/home.css">
+
+    </head>
+    <body id="container">
+        <div id="header_container" class="center">
+            <a href="../layout.html"> <img id="logo" src="../img/bridgehouse_logo_v4.png" alt="coffeelogo"></a>
+            <div id="header_buttons">            
+                <h2><a class="highlight" href="../html/order.html">Order</a></h2>
+                <h2><a class="highlight" href="../html/menu.html">Menu</a></h2>
+                <h2><a class="highlight" href="../html/location.html">Location</a></h2>
+                <h2><a class="highlight" href="../html/gift_cards.html">Gift Cards</a></h2>
+            </div>
+
+        </div>
+        <!--End of header-->
+
+        <div id="orderMenu_container">
+                <!--Buttons to take info from input fields and send them through JS to return as JSON-->
+            <div id="menuBttns">
+                <button  class="item" value="Bridge House Club" > Bridge House Club</button>
+                <button  class="item" value="Roast Beef" > Hot Roast Beef</button>
+                <button  class="item" value="16oz Coffe" > 16oz Coffee</button>
+                <button  class="item" value="Ice-Cream" > Ice-Cream</button>
+                <button  class="item" value="Chips" > Reguar Chips</button>
+                <button  class="item" value="Chef Salad" > Chef Salad</button>
+                <button  class="item" value="Affagato"> Affagato</button>
+                <button  class="item" value="Pastrami sandwich"> Hot Pastrami sandwich</button>
+                <button  class="item" value="Spring Salad"> Spring Salad</button>
+                <button  class="item" value="Latte"> 12oz Latte</button>
+                <button  class="item" value="16oz Jar of Honey"> Honey</button>
+                <button  class="item" value="16oz Mug"> Mug</button>
+
+                
+            </div>
+
+            <div id="placeOrderBttn">
+                <button type="submit" id="submitOrder" onclick="submitOrder()" style="font-size: 2.2vh;font-weight: bold;">Place Order</button>
+            </div>
+                <!--Save selection to an array and display contents to the side-->
+                <!--call js-->
+            <div id="currentOrderList">
+                <h1>Your order</h1>
+                <hr class="wd100">
+                <select id="productList" Name="listOfItems"  multiple="multiple" style="font-size: 2vh;">  
+         
+                </select>  
+                <button name="delete" type="button" onclick="remove()">Remove</button>
+                <!--put list here-->
+            </div>
+        </div>
+
+           
+        <!--End of center-->
+        <footer id="footer_container" class="center">
+
+            <div id="footer_content">
+                <div class="highlight">                
+                    <h3><a  href="../layout.html">Home</a></h3>
+                </div>
+                <div class="highlight">
+                    <h3><a href="../html/menu.html">Menu</a></h3>
+                </div>
+                <div class="highlight"> 
+                    <h3><a class="highlight" href="../html/location.html">Location</a></h3>
+                </div>
+                <div class="highlight">
+                    <h3><a class="highlight" href="../html/gift_cards.html">Gift Cards</a></h3>
+                </div>
+            </div>
+            <div>
+
+            </div>
+            <div id="socials">
+                <div id="faceicon" >
+                    <a href="https://www.facebook.com/BridgeHouse.CoffeeCafe/"><img class="bottomImg" src="../img/facebook-logo.png" alt="FaceBook"></a>
+                </div>
+                <div id="instaicon" >
+                    <a href="https://www.instagram.com/bridge_house_coffee/"><img class="bottomImg" src="../img/instagram-logo.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </footer>
+        <script src="../javascript/scripts.js">
+        
+        </script>
+    </body>
+</html>

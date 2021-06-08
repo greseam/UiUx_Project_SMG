@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--color pallete 
+            orange: #FE7A49
+            white-cream?: #F5F4DB
+            light-cream: #D2C1B0
+            dark-cream: #8F755F
+            brown: #37251B
+
+        -->
+        <title>Bridgehouse Coffee & Cafe - Home</title>
+        <link rel="shortcut icon" href="img/bridgehouse_icon.png">
+        <meta charset="UTF-8">
+        <meta name="description" content="New Web layout for Bridgehouse Coffee and Cafe">
+        <meta name="keywords" content="Coffee, Coffe shop, lunch, breakfast, cafe">
+        <meta name="author" content="Sean Gregor">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/home.css">
+
+    </head>
+    <body id="container">
+        <div id="header_container" class="center">
+            <a href="layout.html"> <img id="logo" src="img/bridgehouse_logo_v4.png" alt="coffeelogo"></a>
+            <div id="header_buttons">            
+                <h2><a class="highlight" href="html/order.html">Order</a></h2>
+                <h2><a class="highlight" href="html/menu.html">Menu</a></h2>
+                <h2><a class="highlight" href="html/location.html">Location</a></h2>
+                <h2><a class="highlight" href="html/gift_cards.html">Gift Cards</a></h2>
+            </div>
+
+        </div>
+        <!--End of header-->
+
+        <div id="main_container">
+            <div id="message">
+                <h1 id="open_message">We are Open!  Dine In, Call in, or Walk through </h1>
+            </div>
+            <div id="main_display">
+                <img id="main_image" src="img/latte4_v3.jpg" alt="latte">
+                <div id="orderBTN">
+                    <button class="Obtn" type="button" value="create page" style="font-size: 3vh;" onclick="orderNow()">Order Here!</button>
+                </div>
+            </div>
+            <div id="second_display">
+                <div id="image1" class="secondDisplayImg"><img class="bottomImg" src="img/morning_buns_v2.jpg" alt="morning buns"></div>
+                <div id="hidText1" class="textform">
+                    <hr class="wd100">
+                    <div class="textContainer">
+                        <aside>Try a Morning Bun</aside>
+                        <br>
+                        <p class="showText"> Cinnamon, sugar, and delisousness all wrapped up in a croisont roll!  </p>
+                    </div>
+                    <hr class="wd100">
+                </div>
+
+                <div id="image2" class="secondDisplayImg"><img class="bottomImg" src="img/roast_beef_v2.jpg" alt="Roast beef"></div>
+                <div id="hidText2" class="textform">
+                    <hr class="wd100">
+                    <div class="textContainer">
+                        <aside>The Hot Roast Beef is Back!</aside>
+                        <br>
+                        <p class="showText"> Fresh sliced Roast Beef, Swiss Chees, Carmelized Onion Jam, and our house made Horseradish Sauce</p>
+                    </div>
+                    <hr class="wd100">
+                </div>
+
+                <div id="image3" class="secondDisplayImg"><img class="bottomImg" src="img/bridgehouse_club_v2.jpg" alt="Club sandwich"></div>
+                <div id="hidText3" class="textform">
+                    <hr class="wd100">
+                    <div class="textContainer">
+                        <aside>Try our Signiture Bridgehouse Club</aside>
+                        <br>
+                        <p class="showText"> Turkey, Pickled Onions, Tomatoes, Lettuce, Qcumbers, and Bacon all between two slices of toasted Cranberry Wild Rice Bread</p>
+                    </div>
+                    <hr class="wd100">
+                </div>
+
+                <div id="image4" class="secondDisplayImg"><img class="bottomImg" src="img/scones.jpg" alt="scones"></div>
+                <div id="hidText4" class="textform">
+                    <hr class="wd100">
+                    <div class="textContainer">     
+                         <aside>Serving Scones every Saturday</aside>
+                         <br>
+                         <p class="showText"> Blueberry, Raspberry, Vanilla Bean, you name it! Check in with us to see which great flavor we have for the week! </p>
+                    </div>
+                    <hr class="wd100">
+                </div>
+            </div>
+            <!--end of top display-->
+            <div id="about_display">
+                <div class="textContainer" id="displayText">
+                    <h2 class="scaleText3">Feed the body and Soul </h2>
+                    <p class="scaleText1">Bridge House Coffee & Cafe is locally owned and opened in 2016. We proudly serve Tiny Footprints coffee and tea from Tea Source. We have fresh baked goods available each week from our bake house partner, Honey & Rye. Our honey is locally sourced from Ames Farm. To top it off, we have Sebastian Joe’s ice cream. Our food, breakfast and lunch, is always amazing.</p>
+                </div>
+
+                <img class="display3" id="cooking_image" src="img/dave_cooking.jpg" alt="cooking">
+            </div>
+            <div id="hours_display">
+                <div id="text_area">
+                    <h2 class="scaleText3">Hours</h2>
+                    <hr> <br>
+                    <p class="scaleText1">Monday-Saturday: 7am - 2pm <br>
+                        Sundays: Closed</p>
+                    <h2 class="scaleText3">Location</h2>
+                    <hr><br>
+                    <p class="scaleText1">Bridge House Coffee & Cafe <br>
+                        100 Bridge Ave E <br>
+                        Delano, MN 55328</p>
+                    <h2 class="scaleText3">Contact Us</h2>
+                    <hr><br>
+                    <p class="scaleText1">Phone: 763-777-9575</p>
+                </div>   
+
+                <img class="display2" id="hours_image" src="img/cold-brew-glass-square.jpg" alt="cold-brew-glass-square">
+            </div>
+            <!--end of info segments-->
+        </div>
+
+           
+        <!--End of center-->
+        <footer id="footer_container" class="center">
+
+            <div id="footer_content">
+                <div class="highlight">                
+                    <h3><a  href="layout.html">Home</a></h3>
+                </div>
+                <div class="highlight">
+                    <h3><a href="html/menu.html">Menu</a></h3>
+                </div>
+                <div class="highlight"> 
+                    <h3><a class="highlight" href="html/location.html">Location</a></h3>
+                </div>
+                <div class="highlight">
+                    <h3><a class="highlight" href="html/gift_cards.html">Gift Cards</a></h3>
+                </div>
+            </div>
+            <div>
+
+            </div>
+            <div id="socials">
+                <div id="faceicon" >
+                    <a href="https://www.facebook.com/BridgeHouse.CoffeeCafe/"><img class="bottomImg" src="img/facebook-logo.png" alt="FaceBook"></a>
+                </div>
+                <div id="instaicon" >
+                    <a href="https://www.instagram.com/bridge_house_coffee/"><img class="bottomImg" src="img/instagram-logo.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </footer>
+        <script src="javascript/scripts.js"></script>
+    </body>
+</html>

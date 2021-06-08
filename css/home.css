@@ -1,0 +1,596 @@
+
+/* Color and Graphics theory
+
+1. The colors I decided with was an orange(#FE7A49) and various cream colors
+    (#8F755F #F5F4DB #D2C1B0) and for contrast I picked a shade of brown (#37251B)
+    - I wanted to goe for colors that looked coffee related, and the orange is 
+        due to the local highschool colors being orange and black. Also the shops
+        logo has orange in it and thought it would be good to use
+
+2. Color palete: #FE7A49 #8F755F #F5F4DB #D2C1B0 #37251B
+
+3. For aranging the colors of the site i plan on having the header and footer hold the most contrast
+    with the background/ whitespace reserved for the middle value. Doing this will allow for more contrast
+    overall. The orange will be used as accent to make better distinguish areas of make areas pop. The
+    lighter tones of cream will be used as background and areas for text to populate. 
+
+*/
+
+/* Font Strategy
+
+1. I plan on using Arial for p tags or simple messages and Britannic for titles or headers of sections.  
+
+2. Bold will be resurved for important sections. Italics wont be used. 
+
+3. normal spacing on text
+
+*/
+
+html{
+    height: 100%;
+}
+
+/* !body */
+body{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
+
+#container{
+    display: grid;
+    grid-template-rows: 16vh auto 14vh ;
+    grid-template-areas:  'header '
+                         'main'
+                         'footer';
+    margin: auto;
+    background-color: #8F755F;
+    min-height: 100%;
+    position: relative;
+}
+
+
+#header_container{
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background-color: #37251B;
+    border-bottom: 12px solid #FE7A49;
+    height: 16vh;
+
+}
+#header_buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+}
+#order_Btn{
+    grid-column: 1;
+}
+#menu_Btn{
+    grid-column: 2;    
+}
+#location_Btn{
+    grid-column: 3;
+}
+#giftCards_Btn{
+    grid-column: 4;
+}
+#logo{
+    height: 40%;
+    width: 60%;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+#open_message{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #F5F4DB;
+}
+#main_container{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* !menu*/
+
+#menu_container{
+    margin-left: 5%;
+}
+
+
+/* !Location CSS */
+#location_container{
+    display: grid;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    align-content: center;
+    margin-bottom: 7%;
+}
+
+#googleMap{
+    grid-column: 2;
+    width: 80%;
+}
+#locationText{
+    grid-column: 1;
+    text-align: center;
+}
+#locContent{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    background-color: #D2C1B0;
+    border-top: 2px solid #37251B ;
+    border-bottom: 2px solid #37251B;
+    align-content: center;
+}
+#secondLocCont{
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin:5%;
+}
+/* End of Location Css */
+
+
+
+/* Start of !Giftcards Css  */
+
+#gift_container{
+    display: flex;
+    grid-area: main;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+#gift_button{
+    width: 15vw;
+    height: 10vh;
+}
+#button_container{
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+    height: 5vh;
+}
+
+/* End of gifCards Css */
+
+/* Start of !orderNow Css  */
+
+#orderMenu_container{
+    display: grid;
+    grid-template-columns: 60vw 20vw;
+    grid-template-rows: 14vh 30vh 14vh;
+
+    color: #37251B;
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    
+}
+
+
+
+#placeOrderBttn{
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+    margin-top: 7%;
+    
+}
+
+#menuBttns{
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    align-self: center;
+    align-content:flex-start;
+}
+
+.item{
+    font-size: 5vh;
+    padding: 1%;
+    color: #37251B;
+    background-color: #D2C1B0;
+}
+
+
+#currentOrderList{
+    grid-column: 2;
+    grid-row: 1 / span 2 ;
+    text-align: center;
+    align-items: flex-start;
+    
+}
+
+#productList{
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+    padding-left: 1%;
+    text-align: right;
+    align-items: flex-end;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* End of ordernow Css */
+
+#main_display{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 50%;
+    border-bottom: 5px solid #37251B;
+    align-items: center;
+
+}
+#main_image{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* !Button */
+#orderBTN{
+    grid-column: 1;
+    grid-row: 1;
+    height: 10vh;
+    z-index: 1;
+    text-align: center;
+    align-self: center;
+   
+}
+.Obtn{
+    width: 15vw;
+    height: 100%;
+}
+
+
+
+#second_display{
+    grid-area: main2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    height: 300px;
+    width: 100%;
+    border-bottom: 15px solid #37251B;
+    margin-bottom: 10%;
+    
+}
+
+.secondDisplayImg{
+    height: 300px;
+    width: 25%;
+}
+.bottomImg{
+    height: 100%;
+    width: 100%;
+}
+
+#image1{
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    
+}
+#image2{
+    grid-column: 2 / span 1;
+    grid-row: 1;
+}
+#image3{
+    grid-column: 3 / span 1;
+    grid-row: 1;
+}
+#image4{
+    grid-column: 4 / span 1;
+    grid-row: 1;
+}
+#hidText1{
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+#hidText2{
+    grid-column: 2 / span 1;
+    grid-row: 1;
+    height: 100%;
+
+}
+#hidText3{
+    grid-column: 3 / span 1;
+    grid-row: 1;
+    height: 100%;
+
+    
+}
+#hidText4{
+    grid-column: 4 / span 1;
+    grid-row: 1;
+    height: 100%;
+    
+}
+.textform{
+    background-color: #37251B;
+    z-index: -1;
+    width: inherit;
+    height: inherit;
+    align-content: center;
+    align-items: center;
+
+}
+
+.textContainer{
+    align-self: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.showText{
+    color:#8F755F;
+    text-align: center;
+    height: 100%;
+    
+    
+}
+
+
+.secondDisplayImg:hover{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#image1,#image2,#image3,#image4,#faceicon,#instaicon,#main_image,#hours_image{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* !footer*/
+#footer_container{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: .3fr 1fr 1fr 1fr .3fr;
+    grid-template-rows: 100%;
+    background-color: #37251B;
+    border-top: 12px solid #FE7A49;
+    height: 14vh;
+    width: 100%;
+
+}
+
+footer{
+    position: absolute;
+    bottom: 0%;
+}
+
+
+#message{
+    margin: auto;
+    color: #F5F4DB;
+}
+
+.display{
+    width: 40%; 
+    height: auto;
+    z-index: 0;
+
+}
+.display2{
+    width: auto; 
+    height: 70vh;
+    z-index: 0;
+
+}
+
+.display3{
+    width: auto;
+    height: 39vh;
+    z-index: 0;
+}
+
+.descriptor{
+    color: #F5F4DB;
+}
+#about_display{
+    grid-area: about;
+    background-color: #D2C1B0;
+    margin: auto;
+    width: 100%;
+    height: 39vh;
+    border-top: 9px solid #FE7A49;
+    border-bottom: 15px solid #37251B;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+}
+
+#displayText{
+    grid-column: 4;
+    grid-row: 1 ;
+    align-self: center;
+    height: 50vh;
+}
+
+.scaleText1{
+    font-size: 2vh;
+    align-self: center;
+}
+.scaleText2{
+    font-size: 3vh;
+    align-self: center;
+}
+.scaleText3{
+    font-size: 4vh;
+    align-self: center;
+}
+
+#cooking_image{
+    grid-column: 2;
+    grid-row: 1 /span all;
+    align-content: center;
+    justify-content: center;
+}
+
+#hours_display{
+    grid-area: hours;
+    height: 5%;
+    margin: auto;
+    width: 100%;
+    height: 70vh;
+    background-color: #D2C1B0;
+    border-top: 9px solid #FE7A49;
+    border-bottom: 15px solid #37251B;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: 1fr 2fr .3fr 2fr .5fr;
+    grid-template-rows: 2fr 1fr 2fr 1fr;
+
+}
+
+#hours_image{
+    grid-column: 4 / span 1;
+    grid-row: 1 / span all;
+}
+
+
+/* font family for h2 tag*/
+h2{
+    font-size: 7vh;
+    font-family: Britannic;
+   
+}
+#footer_content{
+    grid-column: 2 / span 1;
+    grid-row: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    
+}
+#socials{
+    grid-column: 4 / span 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 6.5fr 1fr 1fr .5fr 1fr;
+    height: 40px;
+    padding-top: 10px;
+    width:400px;
+
+}
+
+#faceicon{
+    grid-column: 3 / span 1;
+    grid-row: 1;
+    background-image: url(/img/facebook-logo.png);
+}
+#instaicon{
+    grid-column: 5 / span 1;
+    grid-row: 1;
+    background-image: url(/img/instagram-logo.png);
+}
+/* font family for p tag*/
+p{
+    font-size: 3.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #37251B;
+}
+/* font family for h1 tag*/
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#order_now_btn{
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.highlight:hover{
+    background-color:#8F755F;
+}
+
+#text_area{
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+hr{
+    background-color: #37251B;
+    height: 2px;
+    width: 70%;
+    float: left;
+}
+aside{
+    font-size: 6vh;
+    font-family: Britannic;
+    color: #D2C1B0;
+    text-align: center;
+}
+.wd100{
+    width: 99%;
+    align-self: center;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    #second_display{
+        display: none;
+    }
+    #logo{
+        height: 30%;
+        width: 50%;
+    }
+    #footer_content{
+        width: 160%;
+    }
+    #about_title{
+        grid-row: 2;
+        text-align: center;
+        width: 120%;
+        font-size: 2.5em;
+    }
+    #about_info{
+        text-align: center;
+        font-size: 1.5em;
+        width: 120%;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    #footer_content{
+        width: 320%;
+    }
+    #header_buttons{
+        display: none;
+    }
+
+}
